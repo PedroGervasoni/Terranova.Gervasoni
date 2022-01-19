@@ -51,9 +51,13 @@ ul {
   z-index: 100;
   transition: 0.4s;
   position: fixed;
-  height: 180px;
   text-align: center;
   color: #fff;
+}
+.img__carousel{
+  height: 600px;
+  object-fit: cover;
+  object-position: bottom;
 }
 .nav__links {
   display: flex;
@@ -68,36 +72,75 @@ ul {
   font-size: 20px;
   border-bottom: 3px solid transparent;
 }
+.nav__boton{
+  font-size: 20px;
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.nav__mobile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__burger {
+  margin: .5rem;
+  cursor: pointer;
+}
+.header__burger > span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 3px 1px;
+}
+.header__burger > span:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hiden-for-desktop {
+  display: none;
+}
+
+ul.show {
+  top: 65px;
+}
+
+@media screen and (max-width: 1300px) {
+  .hiden-for-mobile {
+    display: none;
+  }
+
+  .hiden-for-desktop {
+    display: inherit;
+  }
+}
+
+.navbar{
+  border: none !important;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+}
 
 /* css botones */
-.nav__links a:hover {
+.nav-link:hover {
+  color: #c7cdb7 !important;
+  border-bottom: 2px solid #c7cdb7 !important;
+}
+.active {
   color: #c7cdb7;
   border-bottom: 2px solid #c7cdb7;
 }
-.active{
-  color: #c7cdb7;
-  border-bottom: 2px solid #c7cdb7;
-}
-
 /* logo de medio */
-
-.logonav {
-  position: relative;
-  width: 321px;
-  height: 100%;
-  transition: 0.4s;
-  top: 0;
+.bg-dark{
+  background-color: #000 !important;
 }
 .imgnav {
-  width: 321px;
-  height: 169px;
-  position: absolute;
+  width: 160px;
   left: 0%;
   transition: all 0.2s ease;
   object-fit: contain;
-  padding: 5px 0;
+  margin: 5px 20px;
 }
-
 /* fondo index */
 .section__home-title {
   background-position: top center;
