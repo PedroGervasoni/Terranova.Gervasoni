@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="/imagenes\iconos\terranova.ico">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,29 +33,66 @@
 <body>
  <!-- cabecera -->
  <header>
-    <!-- zona navegable -->
-    <nav id="navbar" class="nav sticky">
-      <!-- menu -->
-      <ul class="nav__links">
-        <li><a class="nav__boton" href="/index.html">inicio</a></li>
-        <li><a class="nav__boton" href="galeria.html">galeria</a></li>
-        <li>
-          <a class="nav__boton" href="sobre nostros.html">sobre nosotros</a>
-          <li class="logonav">
-            <img
-              id="logo"
-              class="imgnav"
-              src="/imagenes/logo/logohorizontal blanco.png"
-              alt="logo terranova"
-            />
+  <!-- zona navegable -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="index.html">
+      <img
+        id="logo"
+        class="imgnav"
+        src="/imagenes\logo\logohorizontal blanco.png"
+        alt="logo terranova"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+      <div class="d-flex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav__boton" href="/index.html"
+              >inicio</a
+            >
           </li>
-        </li>
-        <li><a class="nav__boton active" href="reseñas.html">reseñas</a></li>
-        <li><a class="nav__boton" href="contacto.html">contacto</a></li>
-        <li><a class="nav__boton" href="presupuesto.html">presupuesto</a></li>
-      </ul>
-    </nav>
-  </header>
+          <li class="nav-item">
+            <a class="nav-link nav__boton" href="galeria.html"
+              >galeria</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__boton" href="sobre nostros.html"
+              >sobre nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__boton active" href="reseñas.html"
+              >reseñas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__boton" href="contacto.html"
+              >contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav__boton" href="presupuesto.html"
+              >presupuesto</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
 
 
 <article>

@@ -57,7 +57,6 @@ ul {
 .img__carousel{
   height: 600px;
   object-fit: cover;
-  object-position: bottom;
 }
 .nav__links {
   display: flex;
