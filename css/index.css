@@ -67,14 +67,12 @@
   border: 5px solid #79845b;
   border-radius: 13px;
   margin-top: 50px;
-  padding: 40px;
-  width: 1254px;
+  max-width: 1254px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-
+  justify-content: center;
   background-color: #dadecfb2;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
@@ -82,9 +80,17 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .primer-parrafo {
-  width: 666px;
+  max-width: 666px;
   font-size: 24px;
 }
+/* mapa index */
+.mapa-index{
+  max-width: 500px;
+  height: 350px;
+  border-radius: 13px; border: 0
+}
+
+
 
 .content-parrafo-1 {
   display: flex;
@@ -92,6 +98,7 @@
 }
 
 .titulo-parrafo-1 {
+  display: flex;
   font-size: 48px;
   font-weight: bold;
   text-transform: uppercase;
