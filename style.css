@@ -54,7 +54,7 @@ ul {
   text-align: center;
   color: #fff;
 }
-.img__carousel{
+.img__carousel {
   height: 600px;
   object-fit: cover;
 }
@@ -71,18 +71,18 @@ ul {
   font-size: 20px;
   border-bottom: 3px solid transparent;
 }
-.nav__boton{
+.nav__boton {
   font-size: 20px;
   margin: 0 20px;
   text-transform: uppercase;
 }
-.nav__mobile{
+.nav__mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__burger {
-  margin: .5rem;
+  margin: 0.5rem;
   cursor: pointer;
 }
 .header__burger > span {
@@ -105,17 +105,7 @@ ul.show {
   top: 65px;
 }
 
-@media screen and (max-width: 1300px) {
-  .hiden-for-mobile {
-    display: none;
-  }
-
-  .hiden-for-desktop {
-    display: inherit;
-  }
-}
-
-.navbar{
+.navbar {
   border: none !important;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
 }
@@ -130,7 +120,7 @@ ul.show {
   border-bottom: 2px solid #c7cdb7;
 }
 /* logo de medio */
-.bg-dark{
+.bg-dark {
   background-color: #000 !important;
 }
 .imgnav {
@@ -154,9 +144,21 @@ ul.show {
   width: 100%;
   margin-top: 60px;
 }
-/*  inicio CCS (3 partes) */
+/*  inicio CSS (3 partes) */
 
-/* footer CCS */
+/* footer CSS */
+
+@media screen and (max-width: 400px) {
+
+  .hiden-for-mobile{
+    display: none;
+  }
+
+  
+}
+
+
+
 
 /* sector 1 */
 .logo-footer {
@@ -168,6 +170,7 @@ ul.show {
   left: 0;
 }
 .footer {
+  flex-wrap: wrap;
   background-color: black;
   color: #fff;
   display: flex;
