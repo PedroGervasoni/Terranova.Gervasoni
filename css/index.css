@@ -22,6 +22,7 @@
 
 /* parte 1 css */
 .section__home-recuadro-1 {
+  padding: 5px;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -64,6 +65,7 @@
   }
 }
 .section__home-recuadro-1 #recuadro {
+  padding: 15px;
   border: 5px solid #79845b;
   border-radius: 13px;
   margin-top: 50px;
@@ -85,6 +87,7 @@
 }
 /* mapa index */
 .mapa-index{
+  margin: 10px;
   max-width: 500px;
   height: 350px;
   border-radius: 13px; border: 0

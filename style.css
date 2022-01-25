@@ -111,6 +111,15 @@ ul.show {
 }
 
 /* css botones */
+
+.navbar-dark .navbar-toggler {
+  color: none !important; 
+  border-color: none !important;
+}
+
+
+
+
 .nav-link:hover {
   color: #c7cdb7 !important;
   border-bottom: 2px solid #c7cdb7 !important;
@@ -148,7 +157,7 @@ ul.show {
 
 /* footer CSS */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
   .hiden-for-mobile{
     display: none;
@@ -159,6 +168,9 @@ ul.show {
 
 
 /* sector 1 */
+.margin-footer{
+  margin: 37px;
+}
 .logo-footer {
   width: 349px;
   height: 104.542px;
@@ -182,7 +194,6 @@ ul.show {
 
 .footer-sector-01-content {
   margin-top: 100px;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -196,6 +207,11 @@ ul.show {
   display: flex;
   justify-content: space-between;
   width: 220px;
+}
+.nombretelefono{
+  font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: 14px;
 }
 
 /* sector 2 */
@@ -266,4 +282,40 @@ ul.show {
 
 .boton:hover {
   background-color: #98a37b;
+}
+
+
+
+
+/* LINEAS FONDO */
+
+.linea-fondo-clara {
+  right: 0;
+  top: 0;
+
+  width: 20%;
+  background-color: #b4bc9f;
+  position: absolute;
+  z-index: -10;
+}
+
+.linea-fondo-oscuro {
+  left: 0;
+  top: 0;
+
+  width: 20%;
+  background-color: #a2ab87;
+  position: absolute;
+  z-index: -10;
+}
+
+/* parte 1 css */
+.section__home-recuadro-1 {
+  padding: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

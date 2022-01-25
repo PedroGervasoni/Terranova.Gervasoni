@@ -1,51 +1,87 @@
-*{
-    font-family: 'Montserrat', sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-
-
-
-
 /* contactar css */
+/* fotos de perfil */
 
-input[type=text], select, textarea{
-    width: 100%; 
-    padding: 9px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical  
-  }
-  
-  .email{
-        width: 100%; 
-        padding: 9px;  
-        border: 1px solid #ccc; 
-        border-radius: 4px; 
-        box-sizing: border-box; 
-        margin-top: 6px; 
-        margin-bottom: 16px; 
-        resize: vertical  
-  }
-  
-  .boton {
-    background-color: #79845B;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-   
-  .boton:hover {
-    background-color: #98A37B;
-  }
-  
-  
-  .container {
-    border-radius: 5px;
-    padding: 20px;
-    width: 400px;
-  }
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-contacto {
+  margin: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 12px;
+  background-color: #ffffff2b;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 10px 0 rgb(31 38 135 / 37%);
+  padding: 30px;
+}
+.card-image {
+  padding: 15px;
+}
+.avatar {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 140px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title{
+  font-weight: 600;
+    font-size: 36px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.email {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.boton {
+  background-color: #79845b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #98a37b;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+}
