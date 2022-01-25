@@ -4,6 +4,22 @@
 
 /* contactar css */
 /* fotos de perfil */
+/* VALO */
+.icon-content{
+  display: flex;
+}
+.card-text{
+  display: flex;
+  align-items: center;
+}
+
+
+.icono-contacto{
+  display: flex;
+  width: 25px;
+  margin: 7px;
+}
+
 
 .card-container {
   display: flex;
@@ -23,6 +39,7 @@
   box-shadow: 0 1px 10px 0 rgb(31 38 135 / 37%);
   padding: 30px;
 }
+
 .card-image {
   padding: 15px;
 }
@@ -36,6 +53,9 @@
 .card-content{
   display: flex;
   flex-direction: column;
+  width: 290px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .card-title{
@@ -80,8 +100,8 @@ textarea {
   background-color: #98a37b;
 }
 
-.container {
+.container-contacto {
   border-radius: 5px;
   padding: 20px;
-  width: 400px;
+  display: flex;
 }
