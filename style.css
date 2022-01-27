@@ -155,6 +155,640 @@ ul.show {
 }
 /*  inicio CSS (3 partes) */
 
+
+
+
+
+/* CSS INICIO */
+/* LINEAS FONDO */
+
+.linea-fondo-clara {
+  right: 0;
+  top: 0;
+
+  width: 20%;
+  background-color: #b4bc9f;
+  position: absolute;
+  z-index: -10;
+}
+
+.linea-fondo-oscuro {
+  left: 0;
+  top: 0;
+
+  width: 20%;
+  background-color: #a2ab87;
+  position: absolute;
+  z-index: -10;
+}
+
+/* parte 1 css */
+.section__home-recuadro-1 {
+  padding: 5px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* animacion */
+.slide-in-fwd-top {
+  animation: slide-in-fwd-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+    shadow-drop-center 6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* animacion 1*/
+
+@keyframes slide-in-fwd-top {
+  0% {
+    transform: translateZ(-1400px) translateY(-800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+/* sobra animada */
+.shadow-drop-center {
+  animation: shadow-drop-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* animacion sombra */
+
+@keyframes shadow-drop-center {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35);
+  }
+}
+.section__home-recuadro-1 #recuadro {
+  padding: 15px;
+  border: 5px solid #79845b;
+  border-radius: 13px;
+  margin-top: 50px;
+  max-width: 1254px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #dadecfb2;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.primer-parrafo {
+  max-width: 666px;
+  font-size: 24px;
+}
+/* mapa index */
+.mapa-index{
+  margin: 10px;
+  max-width: 500px;
+  height: 350px;
+  border-radius: 13px; border: 0
+}
+
+
+
+.content-parrafo-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-parrafo-1 {
+  display: flex;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+
+/* parte 2 inicio css */
+
+.content-galeria {
+  margin-top: 160px;
+  box-shadow: 0 8px 32px 0 #000;
+  border-top: 2px solid #79845b;
+  border-bottom: 2px solid #79845b;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  background-color: #f6f7f3;
+  padding: 50px;
+}
+
+.parrafo-galeria-index {
+  font-size: 24px;
+  width: auto;
+  text-align: center;
+}
+
+/* galeria css */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* flex galeria */
+.row {
+  display: flex;
+  margin-top: 60px;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+/* css parte 3 inicio */
+
+.content__parrafo3 {
+  font-size: 24px;
+  width: auto;
+  padding: 45px;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+
+
+
+
+/* CSS CONTACTO */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* contactar css */
+/* fotos de perfil */
+/* VALO */
+.icon-content{
+  display: flex;
+}
+.card-text{
+  display: flex;
+  align-items: center;
+}
+
+
+.icono-contacto{
+  display: flex;
+  width: 25px;
+  margin: 7px;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card-contacto {
+  margin: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 12px;
+  background-color: #ffffff2b;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 10px 0 rgb(31 38 135 / 37%);
+  padding: 30px;
+}
+
+.card-image {
+  padding: 15px;
+}
+.avatar {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 140px;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card-title{
+  font-weight: 600;
+    font-size: 36px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.email {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.boton {
+  background-color: #79845b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #98a37b;
+}
+
+.container-contacto {
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+}
+
+.container-contacto-completo{
+  display: grid;
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.contenedor-explica{
+  display: flex;
+  display: grid;
+}
+
+.como-contactarnos{
+  display: flex;
+  display: grid;
+}
+
+.explicacion-contacto{
+  display: flex;
+  display: grid;
+}
+
+
+
+
+
+
+/* CSS GALERIA */
+
+
+
+/* .row {
+  display: grid;
+  padding: 0 4px;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+
+.column {
+  max-width: 25%;
+  padding: 0 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(625px, 1fr));
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer CSS */
 
 @media screen and (max-width: 600px) {
