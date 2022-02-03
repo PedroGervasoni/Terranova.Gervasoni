@@ -410,11 +410,13 @@ ul.show {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .titulo-linea {
-  font-size: 22;
+  font-size: 30px;
   font-weight: 600;
+  text-align: center;
 }
 
 .parrafo-linea {
