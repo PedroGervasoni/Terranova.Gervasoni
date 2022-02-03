@@ -3,13 +3,13 @@
   margin: 0;
   /* rellenos */
   padding: 0;
-
   /* fuentes */
   font-family: "Montserrat", sans-serif;
 }
 
 body {
   background-color: #e3e6db;
+  padding: 200px;
   background-image: url(/imagenes/logo/logohorizontal-blanco-fondo.jpg);
   background-size: 400px;
   background-clip: content-box;
@@ -21,19 +21,15 @@ a {
 }
 
 /* scrollbar */
-
 body::-webkit-scrollbar {
   width: 0.7rem;
 }
-
 body::-webkit-scrollbar-track {
   background: #1e1e24;
 }
-
 body::-webkit-scrollbar-thumb {
   background: #8f9b6f;
 }
-
 body::-webkit-scrollbar-thumb:hover {
   background: #606848;
 }
@@ -95,8 +91,7 @@ ul {
   margin: 0.5rem;
   cursor: pointer;
 }
-
-.header__burger>span {
+.header__burger > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -104,8 +99,7 @@ ul {
   transition: all 0.3s ease-in-out;
   transform-origin: 3px 1px;
 }
-
-.header__burger>span:not(:last-child) {
+.header__burger > span:not(:last-child) {
   margin-bottom: 5px;
 }
 
@@ -119,11 +113,10 @@ ul.show {
 
 .navbar {
   border: none !important;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1);
+  box-shadow: 0 0 20px 0 black;
 }
 
 /* css botones */
-
 .navbar-dark .navbar-toggler {
   color: none !important;
   border-color: none !important;
@@ -168,9 +161,7 @@ ul.show {
 }
 
 /*  inicio CSS (3 partes) */
-
 /* CSS INICIO */
-
 /* parte 1 css */
 .section__home-recuadro-1 {
   padding: 5px;
@@ -181,8 +172,6 @@ ul.show {
   align-items: center;
   justify-content: center;
 }
-
-
 .section__home-recuadro-1 #recuadro {
   padding: 15px;
   margin-top: 50px;
@@ -194,7 +183,7 @@ ul.show {
   justify-content: center;
   background-color: #ffffff2b;
   backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
   border-radius: 13px;
 }
 
@@ -235,7 +224,7 @@ ul.show {
   padding: 20px;
   background-color: #ffffff2b;
   backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
   border-radius: 13px;
   display: flex;
   flex-wrap: wrap;
@@ -273,8 +262,7 @@ ul.show {
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -289,18 +277,19 @@ ul.show {
   user-select: none;
 }
 
-.prev:hover,
+.prev:hover {
+  color: #8f9b6f !important;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 .next:hover {
   color: #8f9b6f !important;
 }
 
 /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -312,9 +301,8 @@ ul.show {
   text-align: center;
 }
 
-
 .active2 {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
 
 .dot:hover {
@@ -329,30 +317,22 @@ ul.show {
   animation-duration: 1.5s;
 }
 
-
 @keyframes fade {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 1;
   }
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
+  .prev, .next, .text {
     font-size: 11px;
   }
 }
-
 /* galeria css */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-
 .column {
   float: left;
   width: 33.33%;
@@ -360,6 +340,10 @@ ul.show {
 }
 
 /* Clear floats after image containers */
+.row {
+  display: flex;
+  margin-top: 60px;
+}
 .row::after {
   content: "";
   clear: both;
@@ -367,32 +351,24 @@ ul.show {
 }
 
 /* flex galeria */
-.row {
-  display: flex;
-  margin-top: 60px;
-}
-
 .column {
   flex: 33.33%;
   padding: 5px;
 }
 
 /* css parte 3 inicio */
-
-
-
-.content-titulo-linea{
+.content-titulo-linea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.titulo-linea{
+.titulo-linea {
   font-size: 22;
   font-weight: 600;
 }
 
-.parrafo-linea{
+.parrafo-linea {
   padding: 24px;
   font-size: 20px;
   font-weight: 400;
@@ -403,117 +379,37 @@ ul.show {
   margin: 100px;
 
 } */
-
-.contenedor-card-linea{
+.contenedor-card-linea {
   display: flex;
   background-color: #ffffff2b;
   backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
   border-radius: 13px;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 80px;
   margin-bottom: 80px;
-  padding: 13px;
+  padding: 5px;
+  align-items: center;
 }
 
-.contenedor-tex-card-linea{
+.contenedor-tex-card-linea {
   display: flex;
   width: 350px;
   flex-direction: column;
   flex-wrap: wrap;
-  
 }
 
-.contenedor-img-linea{
-  
- 
-}
-.img-linea{
+.img-linea {
   width: 340px;
   border-radius: 13px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.direccion-card-derecha, .direccion-card-izq {
+  margin: 10px;
+}
 
 /* CSS CONTACTO */
-
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -552,7 +448,7 @@ ul.show {
   padding: 12px;
   background-color: #ffffff2b;
   backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
   padding: 30px;
 }
 
@@ -580,20 +476,7 @@ ul.show {
   font-size: 36px;
 }
 
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 9px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-.email {
+input[type=text], select, textarea, .email {
   width: 100%;
   padding: 9px;
   border: 1px solid #ccc;
@@ -612,7 +495,6 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
 .boton:hover {
   background-color: #98a37b;
 }
@@ -645,7 +527,7 @@ textarea {
   width: 472px;
   border-radius: 7px;
   height: 600px;
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
 }
 
 .text-contactanos {
@@ -660,27 +542,17 @@ textarea {
   .mapa-contacto {
     width: 320px;
   }
-
-
 }
-
 @media screen and (min-width: 860px) {
-  .container-galeria-index {
-    padding: 50px !important;
-  }
-
-  .content-galeria {
+  .container-galeria-index, .content-galeria {
     padding: 50px !important;
   }
 
   .section__home-recuadro-1 #recuadro {
     padding: 30px !important;
   }
-
 }
-
 /* CSS GALERIA */
-
 /* .row {
   display: grid;
   padding: 0 4px;
@@ -719,192 +591,12 @@ textarea {
   }
 }
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer CSS */
-
-
-
-
 @media screen and (max-width: 600px) {
   .hiden-for-mobile {
     display: none;
   }
 }
-
 /* sector 1 */
 .margin-footer {
   margin: 37px;
@@ -957,7 +649,6 @@ textarea {
 }
 
 /* sector 2 */
-
 .menu-footer-title {
   margin: 55px 0;
   font-family: "Montserrat", sans-serif;
@@ -981,14 +672,12 @@ textarea {
   font-size: 1rem;
   margin: 0.65rem;
 }
-
 .footer-nav__li a:hover {
   color: #c7cdb7;
   border-bottom: 2px solid #c7cdb7;
 }
 
 /* sector 3 */
-
 .contacto-footer-title {
   margin: 55px 0;
   font-family: "Montserrat", sans-serif;
@@ -1021,11 +710,9 @@ textarea {
   border-radius: 4px;
   cursor: pointer;
 }
-
 .boton:hover {
   background-color: #98a37b;
 }
-
 
 /* parte 1 css */
 .section__home-recuadro-1 {
@@ -1037,3 +724,5 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+
+/*# sourceMappingURL=style.css.map */
