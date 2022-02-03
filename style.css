@@ -359,18 +359,9 @@ ul.show {
 }
 
 /* css parte 3 inicio */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .contenedor-tex-card-linea {
     order: -2;
-  }
-}
-@media screen and (min-width: 1263px) {
-  .direccion-card-izq {
-    transform: translateX(0);
-  }
-
-  .direccion-card-derecha {
-    transform: translateX(0);
   }
 }
 .content-titulo-linea {
@@ -412,7 +403,7 @@ ul.show {
 
 .contenedor-tex-card-linea {
   display: flex;
-  width: 350px;
+  max-width: 350px;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -433,13 +424,22 @@ ul.show {
 }
 
 .direccion-card-izq {
-  transform: translateX(-25%);
+  transform: translateX(-30%);
 }
 
 .direccion-card-derecha {
-  transform: translateX(25%);
+  transform: translateX(30%);
 }
 
+@media screen and (max-width: 1263px) {
+  .direccion-card-izq {
+    transform: none;
+  }
+
+  .direccion-card-derecha {
+    transform: none;
+  }
+}
 /* CSS CONTACTO */
 * {
   font-family: "Montserrat", sans-serif;
