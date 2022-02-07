@@ -9,6 +9,17 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* estilo cards */
+
+.estilo-card {
+  border-radius: 13px;
+  background-color: #ffffff2b;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+
 body {
   background-color: #e3e6db;
   background-image: url(/imagenes/logo/logohorizontal-blanco-fondo.jpg);
@@ -197,10 +208,7 @@ ul.show {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    background-color: #ffffff2b;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
-    border-radius: 13px;
+    @extend .estilo-card;
   }
 }
 
@@ -241,10 +249,7 @@ ul.show {
 
 .content-galeria {
   padding: 20px;
-  background-color: #ffffff2b;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
-  border-radius: 13px;
+  @extend .estilo-card;
   display: flex;
   flex-wrap: wrap;
   min-height: 470px;
@@ -428,15 +433,12 @@ ul.show {
 .contenedor-maestro-cards-linea {
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
 }
 
 .contenedor-card-linea {
   display: flex;
-  background-color: #ffffff2b;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
-  border-radius: 13px;
+  @extend .estilo-card;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 80px;
@@ -454,7 +456,7 @@ ul.show {
   padding: 20px;
 }
 
-.contenedor-img-linea{
+.contenedor-img-linea {
   padding: 20px;
 }
 
@@ -464,35 +466,36 @@ ul.show {
   border-radius: 13px;
 }
 
- .direccion-card-derecha, .direccion-card-izq {
-    padding: 5px;
-  }
+.direccion-card-derecha,
+.direccion-card-izq {
+  padding: 5px;
+}
 
-    .direccion-card-izq{
-      transform: translateX(-30%);
-   
-  }
+.direccion-card-izq {
+  transform: translateX(-30%);
 
-  .direccion-card-derecha{
-    transform: translateX(30%);
-    
-  } 
+}
 
-   @media screen and (max-width: 1263px) {
-  .direccion-card-izq{
+.direccion-card-derecha {
+  transform: translateX(30%);
+
+}
+
+@media screen and (max-width: 1263px) {
+  .direccion-card-izq {
     transform: none;
   }
 
-  .direccion-card-derecha{
+  .direccion-card-derecha {
     transform: none;
-    
+
   }
- 
-} 
- 
+
+}
 
 
-   
+
+
 /* CSS CONTACTO */
 
 * {
@@ -530,11 +533,8 @@ ul.show {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-radius: 7px;
   padding: 12px;
-  background-color: #ffffff2b;
-  backdrop-filter: blur(2px);
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 37%);
+  @extend .estilo-card;
   padding: 30px;
 }
 
@@ -648,46 +648,6 @@ textarea,
 
 /* CSS GALERIA */
 
-/* .row {
-    display: grid;
-    padding: 0 4px;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-  }
-  
-  
-  .column {
-    max-width: 25%;
-    padding: 0 4px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(625px, 1fr));
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-  }
-  
-  
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-   */
-
-/* footer CSS */
 
 @media screen and (max-width: 600px) {
   .hiden-for-mobile {
