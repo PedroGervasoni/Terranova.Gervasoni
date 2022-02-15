@@ -9,6 +9,36 @@
   font-family: "Montserrat", sans-serif;
 }
 
+
+/* css 404 */
+.container-general-404 {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  margin-top: 160px;
+}
+
+.container-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  @extend .estilo-card
+}
+
+.h1-404{
+font-size: 60px;
+font-weight: 600;
+}
+.parrafo-404-1{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.parrafo-404-2{
+  font-size: 20px;
+  margin-bottom: 40px;
+}
 /* estilo cards */
 
 .estilo-card {
@@ -654,6 +684,83 @@ textarea,
     display: none;
   }
 }
+
+
+
+
+/* css reseñas */
+
+.review-contenedor{
+  margin: 5px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.review-title{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.review-text{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* contenedor cards reseñas */
+.review-cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* css card reseñas */
+.review-card{
+  max-width: 530px;
+  min-height: 200px;
+  padding: 5px;
+  margin: 10px;
+  @extend .estilo-card
+}
+.content-review-card{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  
+  
+}
+.click-reseña{
+ font-size: 22px;
+ font-weight: 600;
+}
+.review-card-user{
+  display: flex;
+  align-items: center;
+  
+}
+
+.review-card-img{
+  width: 55px;
+  border-radius: 50%;
+}
+.review-card-name{
+  font-size: 20px;
+  margin-left: 10px;
+ 
+}
+.star-contenedor{
+  display: flex;
+}
+
+.text-review-content{
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+
 
 /* sector 1 */
 
