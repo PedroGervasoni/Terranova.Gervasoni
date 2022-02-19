@@ -1,4 +1,32 @@
 @charset "UTF-8";
+.galeria-img-1 {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.galeria-link {
+  display: block;
+}
+
+.galeria-item {
+  list-style-type: none;
+  width: 100%;
+  border-radius: 13px;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
 * {
   /* margenes */
   margin: 0;
@@ -115,11 +143,19 @@ ul {
 .nav {
   background-color: black;
   width: 100%;
-  z-index: 100;
+  z-index: 1 !important;
   transition: 0.4s;
   position: fixed;
   text-align: center;
   color: #fff;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .img__carousel {
@@ -716,6 +752,70 @@ textarea,
   padding: 5px;
   font-size: 16px;
   font-weight: 400;
+}
+
+/* css galeria  */
+.galeria-lista {
+  width: 100%;
+  /*  background:lightgrey; */
+  padding: 10px;
+  margin-bottom: 100px !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 27rem), 1fr));
+  gap: 1em;
+}
+
+.galeria-lista .galeria-item {
+  background: white;
+  overflow: hidden;
+}
+
+.galeria-lista .galeria-img-1 {
+  min-height: 25vh;
+  transition: all 0.5s ease;
+  transform: scale(1.4);
+}
+
+.galeria-lista .galeria-item:hover .galeria-img-1 {
+  transform: scale(1.2);
+  transform-origin: top;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+
+/* cuando se abre la imagen */
+.lightbox.activo {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  backdrop-filter: blur(4px);
+}
+
+.lightbox .cerrar {
+  height: 3em;
+  margin: 0 0 1em;
+  cursor: pointer;
+}
+
+.lightbox .grande {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
 }
 
 /* sector 1 */
