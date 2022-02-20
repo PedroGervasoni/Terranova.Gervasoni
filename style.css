@@ -657,9 +657,13 @@ textarea,
 }
 /* css reseñas */
 .review-contenedor {
+  text-align: center;
   margin: 5px;
   margin-top: 40px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .review-title {
@@ -734,9 +738,9 @@ textarea,
 }
 
 .galeria-titulo {
-  font-size: 30px;
-  font-weight: 600;
-  margin-top: 70px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 40px;
 }
 
 .galeria-parrafo {
@@ -765,7 +769,10 @@ textarea,
   border-radius: 13px;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
