@@ -939,7 +939,78 @@ q:after {
   object-fit: contain;
 }
 
+/* css presupuesto */
 
+.container-presupuesto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.container-text-presupuesto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-presupuesto {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.container-links-presupuesto {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+  justify-content: center;
+  @extend .estilo-card;
+  margin: 100px 5px;
+}
+
+.parrafo-presupuesto {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+.container-link-presupuesto {
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.parrafo-link-presupuesto {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-presupuesto-terminos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.titulo-terminos {
+  margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+}
+
+.parrafo-terminos {
+  text-align: center;
+  margin: 5px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 400;
+}
 
 /* sector 1 */
 
