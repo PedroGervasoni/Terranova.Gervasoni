@@ -239,7 +239,7 @@ ul.show {
 /* parte 1 css */
 .section__home-recuadro-1 {
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 140px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -248,7 +248,7 @@ ul.show {
 }
 .section__home-recuadro-1 #recuadro {
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 140px;
   max-width: 1254px;
   display: flex;
   align-items: flex-start;
@@ -530,6 +530,7 @@ ul.show {
 }
 
 .card-container {
+  margin-top: 140px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -667,6 +668,7 @@ textarea,
 }
 
 .review-title {
+  margin-top: 140px;
   font-size: 40px;
   font-weight: 500;
 }
@@ -732,6 +734,7 @@ textarea,
 
 /* css galeria  */
 .contenedor-galeria-text {
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -851,6 +854,7 @@ q:after {
 
 /* css presupuesto */
 .container-presupuesto {
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
